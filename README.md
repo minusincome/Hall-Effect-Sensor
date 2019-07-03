@@ -1,13 +1,12 @@
 # Hall Effect Sensor
 
-This device is a purely electrical design of a Hall Effect Sensor that measures the magnitude of the magnetic field and displays it on a voltmeter display.
+This device is a purely electrical design of a Hall Effect Sensor that measures the magnitude of the magnetic field and displays it on a voltmeter display. 
 
 ![Hall Effect Sensor](tricorder.jpg "Hall Effect Sensor")
 
 ## Installation
 
 The PCB design files are made in KiCAD which is an open source program and can be downloaded on [their website](http://www.kicad-pcb.org/). 
-
 
 ## Components
 
@@ -20,13 +19,9 @@ The PCB design rules are made to comply with the requirements by [Eurocircuits](
  - S1P1 Switch
  - 9V Battery and Battery Holder
  
- 
 ## Contributing
 
-The project is still a work in progress and requires software to drive the LEDs.
-
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome.
 
 
 ## License
