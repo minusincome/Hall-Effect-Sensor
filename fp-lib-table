@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name LTC2053CMS8PBF)(type Legacy)(uri "C:/Users/s.talvistu/Documents/Git/Hall Effect sensor/Hall_Library/LTC2053CMS8PBF.mod")(options "")(descr ""))
+  (lib (name HallSensor)(type KiCad)(uri "C:/Users/s.talvistu/Documents/Git/Hall Effect sensor/HallSensor.pretty")(options "")(descr ""))
+)

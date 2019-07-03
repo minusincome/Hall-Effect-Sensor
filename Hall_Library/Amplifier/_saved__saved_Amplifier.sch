@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+LIBS:_saved_Amplifier-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5CDACF5F
+P 4050 3950
+F 0 "C1" V 3798 3950 50  0000 C CNN
+F 1 "2.2uF" V 3889 3950 50  0000 C CNN
+F 2 "" H 4088 3800 50  0001 C CNN
+F 3 "~" H 4050 3950 50  0001 C CNN
+	1    4050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CDADA8A
+P 5250 3400
+F 0 "C2" H 5365 3446 50  0000 L CNN
+F 1 "1000uF" H 5365 3355 50  0000 L CNN
+F 2 "" H 5288 3250 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3950 4200 3950
+$Comp
+L power:GND #PWR03
+U 1 1 5CDB03E3
+P 5250 3550
+F 0 "#PWR03" H 5250 3300 50  0001 C CNN
+F 1 "GND" H 5255 3377 50  0000 C CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CDB081B
+P 4650 4750
+F 0 "#PWR02" H 4650 4500 50  0001 C CNN
+F 1 "GND" H 4655 4577 50  0000 C CNN
+F 2 "" H 4650 4750 50  0001 C CNN
+F 3 "" H 4650 4750 50  0001 C CNN
+	1    4650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:LINE #PWR01
+U 1 1 5CDB1504
+P 3800 3950
+F 0 "#PWR01" H 3800 3800 50  0001 C CNN
+F 1 "LINE" H 3817 4123 50  0000 C CNN
+F 2 "" H 3800 3950 50  0001 C CNN
+F 3 "" H 3800 3950 50  0001 C CNN
+	1    3800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3950 3900 3950
+$Comp
+L power:GND #PWR04
+U 1 1 5CDB32AA
+P 6150 4900
+F 0 "#PWR04" H 6150 4650 50  0001 C CNN
+F 1 "GND" H 6155 4727 50  0000 C CNN
+F 2 "" H 6150 4900 50  0001 C CNN
+F 3 "" H 6150 4900 50  0001 C CNN
+	1    6150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4050 6300 4200
+$Comp
+L Device:L L1
+U 1 1 5CDB2097
+P 6300 4350
+F 0 "L1" H 6353 4396 50  0000 L CNN
+F 1 "15uH" H 6353 4305 50  0000 L CNN
+F 2 "" H 6300 4350 50  0001 C CNN
+F 3 "~" H 6300 4350 50  0001 C CNN
+	1    6300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CDB77B0
+P 7450 4350
+F 0 "C4" H 7150 4400 50  0000 L CNN
+F 1 "670nF" H 7100 4300 50  0000 L CNN
+F 2 "" H 7488 4200 50  0001 C CNN
+F 3 "~" H 7450 4350 50  0001 C CNN
+	1    7450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4200 7450 4050
+Wire Wire Line
+	6000 4050 6150 4050
+Wire Wire Line
+	5250 3250 5550 3250
+Connection ~ 5250 3250
+Wire Wire Line
+	4650 3250 4650 3650
+Wire Wire Line
+	5250 3250 4650 3250
+$Comp
+L Amplifier_Audio:TDA7264 U1
+U 1 1 5CDC106D
+P 4650 3950
+F 0 "U1" H 4450 4350 50  0000 L CNN
+F 1 "TDA7264" H 4300 4250 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-8_Vertical" H 4650 3950 50  0001 C CIN
+F 3 "http://www.st.com/resource/en/datasheet/tda7264.pdf" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4500 6300 4900
+Wire Wire Line
+	6300 4900 6150 4900
+Wire Wire Line
+	7450 4500 7450 4900
+$Comp
+L Device:R R1
+U 1 1 5CDB3B84
+P 5100 4100
+F 0 "R1" H 5170 4146 50  0000 L CNN
+F 1 "4,7Ω" H 5170 4055 50  0000 L CNN
+F 2 "" V 5030 4100 50  0001 C CNN
+F 3 "~" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CE5736B
+P 5100 4400
+F 0 "C3" H 5215 4446 50  0000 L CNN
+F 1 "100nF" H 5215 4355 50  0000 L CNN
+F 2 "" H 5138 4250 50  0001 C CNN
+F 3 "~" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4550 5100 4650
+$Comp
+L Device:R R2
+U 1 1 5CE58734
+P 5550 3950
+F 0 "R2" V 5343 3950 50  0000 C CNN
+F 1 "1Ω" V 5434 3950 50  0000 C CNN
+F 2 "" V 5480 3950 50  0001 C CNN
+F 3 "~" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 4250 4650 4650
+Wire Wire Line
+	4650 4650 5100 4650
+Connection ~ 4650 4650
+Wire Wire Line
+	4650 4650 4650 4750
+Wire Wire Line
+	4950 3950 5100 3950
+Connection ~ 5100 3950
+Wire Wire Line
+	5100 3950 5400 3950
+$Comp
+L power:VS #PWR?
+U 1 1 5CE5A91A
+P 5550 3250
+F 0 "#PWR?" H 5350 3100 50  0001 C CNN
+F 1 "VS" H 5567 3423 50  0000 C CNN
+F 2 "" H 5550 3250 50  0001 C CNN
+F 3 "" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 6400 4600 0    50   ~ 0
+f_res = 50kHz
+Wire Wire Line
+	5700 3950 6150 3950
+Wire Wire Line
+	6150 3950 6150 4050
+Connection ~ 6150 4050
+Wire Wire Line
+	6150 4050 6300 4050
+Connection ~ 6150 4900
+Wire Wire Line
+	6150 4900 6000 4900
+$EndSCHEMATC

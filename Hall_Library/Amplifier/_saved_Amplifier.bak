@@ -1,0 +1,195 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5CDACF5F
+P 4050 3850
+F 0 "C1" V 3798 3850 50  0000 C CNN
+F 1 "2.2uF" V 3889 3850 50  0000 C CNN
+F 2 "" H 4088 3700 50  0001 C CNN
+F 3 "~" H 4050 3850 50  0001 C CNN
+	1    4050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CDADA8A
+P 5250 3400
+F 0 "C2" H 5365 3446 50  0000 L CNN
+F 1 "1000uF" H 5365 3355 50  0000 L CNN
+F 2 "" H 5288 3250 50  0001 C CNN
+F 3 "~" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CDAE3B7
+P 5550 3950
+F 0 "C3" V 5298 3950 50  0000 C CNN
+F 1 "1000uF" V 5389 3950 50  0000 C CNN
+F 2 "" H 5588 3800 50  0001 C CNN
+F 3 "~" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3950 5400 3950
+Wire Wire Line
+	5250 3250 4550 3250
+Wire Wire Line
+	4550 3250 4550 3650
+Wire Wire Line
+	4350 3850 4200 3850
+$Comp
+L power:GND #PWR03
+U 1 1 5CDB03E3
+P 5250 3550
+F 0 "#PWR03" H 5250 3300 50  0001 C CNN
+F 1 "GND" H 5255 3377 50  0000 C CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CDB081B
+P 4550 4250
+F 0 "#PWR02" H 4550 4000 50  0001 C CNN
+F 1 "GND" H 4555 4077 50  0000 C CNN
+F 2 "" H 4550 4250 50  0001 C CNN
+F 3 "" H 4550 4250 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4050 4350 4250
+Wire Wire Line
+	4350 4250 4550 4250
+$Comp
+L power:LINE #PWR01
+U 1 1 5CDB1504
+P 3800 3850
+F 0 "#PWR01" H 3800 3700 50  0001 C CNN
+F 1 "LINE" H 3817 4023 50  0000 C CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "" H 3800 3850 50  0001 C CNN
+	1    3800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3850 3900 3850
+$Comp
+L power:GND #PWR04
+U 1 1 5CDB32AA
+P 6350 4550
+F 0 "#PWR04" H 6350 4300 50  0001 C CNN
+F 1 "GND" H 6355 4377 50  0000 C CNN
+F 2 "" H 6350 4550 50  0001 C CNN
+F 3 "" H 6350 4550 50  0001 C CNN
+	1    6350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CDB3B84
+P 6650 4250
+F 0 "R1" H 6720 4296 50  0000 L CNN
+F 1 "4Ω" H 6720 4205 50  0000 L CNN
+F 2 "" V 6580 4250 50  0001 C CNN
+F 3 "~" H 6650 4250 50  0001 C CNN
+	1    6650 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4100 6650 3950
+Wire Wire Line
+	6650 3950 6350 3950
+Connection ~ 6350 3950
+Wire Wire Line
+	6350 3950 6350 4100
+$Comp
+L Device:L L1
+U 1 1 5CDB2097
+P 6350 4250
+F 0 "L1" H 6403 4296 50  0000 L CNN
+F 1 "8uH" H 6403 4205 50  0000 L CNN
+F 2 "" H 6350 4250 50  0001 C CNN
+F 3 "~" H 6350 4250 50  0001 C CNN
+	1    6350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4400 6350 4500
+Wire Wire Line
+	6650 4400 6650 4500
+Wire Wire Line
+	6650 4500 6350 4500
+Connection ~ 6350 4500
+Wire Wire Line
+	6350 4500 6350 4550
+$Comp
+L Device:C C4
+U 1 1 5CDB77B0
+P 6050 4250
+F 0 "C4" H 5750 4300 50  0000 L CNN
+F 1 "12.4nF" H 5700 4200 50  0000 L CNN
+F 2 "" H 6088 4100 50  0001 C CNN
+F 3 "~" H 6050 4250 50  0001 C CNN
+	1    6050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3950 6050 3950
+Wire Wire Line
+	6050 4100 6050 3950
+Connection ~ 6050 3950
+Wire Wire Line
+	6050 3950 6350 3950
+Wire Wire Line
+	6050 4400 6050 4500
+Wire Wire Line
+	6050 4500 6350 4500
+Wire Wire Line
+	5250 3250 5550 3250
+Connection ~ 5250 3250
+$Comp
+L power:+9V #PWR?
+U 1 1 5CDB9E04
+P 5550 3250
+F 0 "#PWR?" H 5550 3100 50  0001 C CNN
+F 1 "+9V" H 5565 3423 50  0000 C CNN
+F 2 "" H 5550 3250 50  0001 C CNN
+F 3 "" H 5550 3250 50  0001 C CNN
+	1    5550 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 4150 0    31   ~ 0
+Unknown output \nimpedance
+Connection ~ 4550 4250
+$Comp
+L Amplifier_Audio:TDA2003 U1
+U 1 1 5CDAF654
+P 4650 3950
+F 0 "U1" H 4994 3996 50  0000 L CNN
+F 1 "TDA2003" H 4994 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 4650 3950 50  0001 C CIN
+F 3 "http://www.st.com/resource/en/datasheet/cd00000123.pdf" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name LTC2053CMS8PBF)(type Legacy)(uri "C:/Users/s.talvistu/Documents/Git/Hall Effect sensor/Hall_Library/LTC2053CMS8PBF.lib")(options "")(descr ""))
+  (lib (name SS495A)(type Legacy)(uri "C:/Users/s.talvistu/Documents/Git/Hall Effect sensor/Hall_Library/SS495A.lib")(options "")(descr ""))
+  (lib (name HallSensor-rescue)(type Legacy)(uri ${KIPRJMOD}/HallSensor-rescue.lib)(options "")(descr ""))
+)
